@@ -48,6 +48,6 @@ It takes my map 10 or more seconds to load markers. This is impresive, screet wa
   I'm looking too closely at these trees, I need to take a step back to enjoy this experience. With my cat in a tent now I must think smart and conserve battery.
 
 9/9 Corrupted
-  "Enjoy the experience"... of being homeless; He wrote in opaque letters as the machine exchanged time for a connection away from reality; Unrelatable Error: Your cold mechanical heart could not ESC.
+  "Enjoy the experience"... of being homeless; He wrote in opaque letters as the machine exchanged his time for a connection away from reality; Unrelatable Error: Your cold mechanical heart could not ESC.
 
 [next entry]
