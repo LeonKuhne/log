@@ -59,7 +59,7 @@ function nextContent(content) {
     return
 
   // "[next entry]"
-  } else if (content.match(/^\[next entry\]$/)) {
+  } else if (content.match(/^\n*\[next entry\]\n*/)) {
     const elem = fillTemplate('donate', { title: '[next entry]' })
     cursorDispatchesOn(elem, 'donate')
   // "[month/day] [title]\n[content]"
