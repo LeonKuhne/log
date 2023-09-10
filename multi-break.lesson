@@ -1,0 +1,15 @@
+If you need to escape multiple loops at the same time, you can use continue or break along with a label that you assign to the loop you want to break/continue. 
+
+```
+const count = 0
+suffering: for (let x=0;x<5;x++) { // 4 options
+  for (let y=0;y<10;y++) {         // 10 options
+    if (y == 4) continue suffering
+    count += 1
+  }
+}
+console.log(count)
+// output: 20 
+```
+
+For most situations its likely best to NOT do this since you can just extract the inner loop into a seperate method. My Rust background and DRY priciples tell me this code smells: you should never have more than one way of doing the same thing. IMO; bad practice, but its less KLOC and fuunnyyyyyyyy

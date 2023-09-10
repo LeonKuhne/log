@@ -1,0 +1,28 @@
+# ECS-like HTMLElement Rendering Pipeline
+## Its not pretty but it works 
+
+### Demo debug output. Indexes are priority so render order is bottom to top, draw is called last.
+0 
+	() => this.draw()
+2 
+	() => this.loadVariables() 
+	() => this.setupGrid() 
+	() => this.makeGrid() 
+3 
+	() => this.loadTemplate()
+
+### Demo usage
+export class Template extends Elem {
+  constructor(filename) {
+    super()
+    this.onLoad(async () => await this.loadTemplate(), Elem.priority.HIGH)
+    this.onLoad(() => this.loadVariables())
+  }
+  async loadTemplate() {...}
+  loadVariables() {...}
+}
+
+### Additional feature was needed to wait on child elements. My implemented solution only works with one element at a time currently.
+    this.waitOnElem('city-view', elem => this.city = elem)
+    this.onLoad(() => this.loadPanning(), Elem.priority.MEDIUM, 'city-view')
+    this.onLoad(() => this.loadSpacialData(), Elem.priority.MEDIUM, 'city-view')
