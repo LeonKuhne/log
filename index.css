@@ -3,7 +3,7 @@ html {
   user-select: none;
 } body {
   background: black;
-  color: white;
+  color: goldenrod;
   font-family: monospace;
   max-width: 600px;
   margin: auto;
