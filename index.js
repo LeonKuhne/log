@@ -105,7 +105,7 @@ const donateText = [
   "Welcome to the earths literal future",
   "Ok, get out a pen and paper. You're not going to believe this.",
   "I'm waiting...",
-  "I hope have a nice day - Leon K",
+  "I hope you have a nice day - Leon K",
   "https://www.paypal.me/leonkuhne",
 ]
 let iteration = 0
