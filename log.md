@@ -39,7 +39,7 @@ I added map markers and fixed the lot builder to generate some template lots, wh
 I badly want to work on the lot view now. I'm thinking of moving the selected marker text to the bottom of the screen like in the real maps apps. A double tap for now will to to purchase lots.
 
 9/4 A fun fact
-It takes my map 10 or more seconds to load markers. This is impresive, screet walker finishes in under one. But first I want to fix my directory structure. F webpack and F preprocessing complexities; 5 lines of bash can hotreload component urls, 10 lines can save the world. 
+It takes my map 10 or more seconds to load markers. This is impresive, street walker finishes in under one. But first I want to fix my directory structure. F webpack and F preprocessing complexities; 5 lines of bash can hotreload component urls, 10 lines can save the world. 
 
 9/5 Hmphff.
   A long time ago, my mom said debugging was like playing a game. It ticks me off still. I made my element registry preload all elements and trigger my own intitialization function on elements instead of connectedCallback. This isn't ideal, but I need to start making progress again, and the code looks clean.
