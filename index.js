@@ -100,7 +100,7 @@ const donateText = [
   "Yeah but what if this goes on forever? It could be ChatGPT generated.",
   "Would you give your money to a bot...",
   "...if their creator was a machine?",
-  "This machines creator is long dead, but the family still profits.",
+  "This machine's creator is long dead, but the family still profits.",
   "Welcome to America",
   "Welcome to the earths literal future",
   "Ok, get out a pen and paper. You're not going to believe this.",
