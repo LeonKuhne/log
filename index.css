@@ -13,6 +13,7 @@ html {
   color: red;
 } .content {
   white-space: pre-wrap;
+  font-size: 0.875rem;
 } .year {
   margin: auto;
   margin-right: 0;
@@ -24,8 +25,8 @@ html {
   position: absolute;
   top: var(--y);
   left: var(--x);
-  font-size: 1rem;
   z-index: 100;
+  font-size: 0.875rem;
   line-height: 0;
   /* fast fade in, slow fade out */
   transition: none 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
