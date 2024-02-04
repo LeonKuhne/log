@@ -39,6 +39,16 @@ function fillTemplate(templateClass, dataClasses) {
     let text = dataClasses[clazz]
     elem.querySelector(`.${clazz}`).innerText = text
   }
+  // parse for links in markdown format
+  elem.innerHTML = elem.innerHTML.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
+  elem.querySelectorAll('a').forEach(a => {
+    a.onmouseenter = () => {
+      const cursor = document.querySelector('#cursor')
+      cursor.href = a.href
+      cursor.textContent = a.textContent
+      cursor.classList.add('action')
+    }
+  })
   return elem
 }
 
@@ -131,7 +141,9 @@ const ready = new Ready(2, () => {
   cursor.addEventListener('mousedown', () => {
     if (cursor.innerText === 'cursor') return
     else if (cursor.innerText === 'donate') donate()
-    else console.warn(`Unknown cursor action: ${cursor.innerText}`)
+    else {
+      window.open(cursor.href)
+    }
   })
 })
 

@@ -7,6 +7,7 @@ html {
   font-family: monospace;
   max-width: 600px;
   margin: auto;
+  margin-bottom: 2rem;
 } .title, .year, .donate {
   width: fit-content;
 } .title {
@@ -37,4 +38,8 @@ html {
   color: rgba(255, 0, 0, 1);
 } #cursor.action {
   filter: invert(1);
+} a {
+  text-decoration: none;
+  cursor: inherit;
+  color: rgba(255, 0, 0, 1);
 }
